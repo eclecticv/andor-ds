@@ -1,0 +1,40 @@
+/* ============================================================
+   Theme: MediaContext (an And/or Labs product)
+
+   Same operating system, different instrument. Values mirror the
+   live mediacontext.dev palette: one cool hue (222) through ink and
+   action, chroma reserved for meaning. Markers map to the evidence
+   tiers the product already uses.
+
+   Fonts are loaded by the product (IBM Plex Sans, Outfit, JetBrains
+   Mono via @fontsource-variable); this theme only names them.
+   ============================================================ */
+
+:root {
+  --background: oklch(0.984 0.004 222);
+  --foreground: oklch(0.22 0.02 222);
+  --card: oklch(1 0 0);
+  --popover: oklch(1 0 0);
+  --primary: oklch(0.45 0.075 222);
+  --primary-foreground: oklch(0.985 0.004 222);
+  --secondary: oklch(0.962 0.006 222);
+  --muted: oklch(0.962 0.006 222);
+  --muted-foreground: oklch(0.45 0.018 222);
+  --accent: oklch(0.955 0.01 222);
+  --border: oklch(0.905 0.008 222);
+  --input: oklch(0.64 0.014 222);
+  --ring: oklch(0.52 0.09 222);
+
+  --tint: oklch(0.955 0.014 222);
+
+  --marker-1: oklch(0.46 0.105 152);           /* tier: declared */
+  --marker-2: oklch(0.56 0.075 222);           /* tier: corroborated */
+  --marker-3: oklch(0.63 0.11 75);             /* tier: weak */
+  --marker-4: oklch(0.66 0.012 222);           /* tier: presence only */
+
+  --font-sans: "IBM Plex Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace;
+
+  --radius: 0.75rem;
+}

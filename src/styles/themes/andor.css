@@ -1,0 +1,47 @@
+/* ============================================================
+   Theme: And/or Labs (the parent brand)
+
+   Light, modern, slightly playful. White paper, near-black ink,
+   electric blue for actions, and four markers that colour-code
+   lines of work. Geist does the talking; Departure Mono is a
+   seasoning for labels and numbers only, never headings.
+   ============================================================ */
+
+@import "@fontsource-variable/geist";
+
+@font-face {
+  font-family: "Departure Mono";
+  src: url("../../fonts/DepartureMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.18 0.006 270);
+  --card: oklch(1 0 0);
+  --popover: oklch(1 0 0);
+  --primary: oklch(0.53 0.255 265);            /* #1B4DFF electric blue */
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.97 0.003 270);
+  --muted: oklch(0.977 0.002 270);
+  --muted-foreground: oklch(0.5 0.012 270);    /* 5.2:1 on white */
+  --accent: oklch(0.965 0.008 268);
+  --border: oklch(0.925 0.004 270);
+  --input: oklch(0.86 0.006 270);
+  --ring: oklch(0.53 0.255 265);
+
+  --tint: oklch(0.968 0.022 266);
+
+  --marker-1: oklch(0.53 0.255 265);           /* blue: services */
+  --marker-2: oklch(0.68 0.19 42);             /* orange: products */
+  --marker-3: oklch(0.62 0.16 152);            /* green: writing */
+  --marker-4: oklch(0.63 0.21 355);            /* pink: lab, experiments */
+
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-label: "Departure Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --radius: 0.75rem;
+}
