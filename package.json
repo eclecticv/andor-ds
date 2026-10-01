@@ -1,52 +1,26 @@
 {
   "name": "@andor/ds",
-  "version": "0.1.0",
-  "description": "And/or Labs design system: shared tokens, product themes and the header, footer and section components every And/or product is built on.",
+  "version": "0.2.0",
+  "description": "And/or Labs design system: the Mainline template verbatim, plus colour and font themes per product and a checker that keeps products on Mainline.",
   "license": "MIT",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eclecticv/andor-ds.git"
   },
-  "sideEffects": [
-    "*.css"
-  ],
   "exports": {
-    ".": "./src/index.ts",
-    "./styles.css": "./src/styles/index.css",
-    "./themes/andor.css": "./src/styles/themes/andor.css",
-    "./themes/mediacontext.css": "./src/styles/themes/mediacontext.css",
-    "./fonts/*": "./src/fonts/*"
+    "./themes/andor.css": "./themes/andor.css",
+    "./themes/mediacontext.css": "./themes/mediacontext.css"
   },
   "files": [
-    "src",
+    "mainline",
+    "themes",
+    "fonts",
+    "scripts",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@fontsource-variable/geist": "^5.2.8",
-    "@radix-ui/react-accordion": "^1.2.12",
-    "@radix-ui/react-slot": "^1.2.3",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.545.0",
-    "tailwind-merge": "^3.3.1",
-    "tw-animate-css": "^1.4.0"
-  },
-  "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwindcss": "^4.1.0"
-  },
-  "devDependencies": {
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "tailwindcss": "^4.1.14",
-    "typescript": "^5.9.3"
+    "check": "node scripts/check.mjs"
   }
 }

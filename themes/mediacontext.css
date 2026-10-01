@@ -1,0 +1,28 @@
+/* MediaContext theme for Mainline.
+   Colour and font values only. Import after mainline/styles/global.css,
+   or paste these values over the same declarations in a product's copy.
+   The product loads IBM Plex Sans, Outfit and JetBrains Mono itself
+   (for example via @fontsource-variable). */
+
+:root {
+  --background: oklch(0.984 0.004 222);
+  --foreground: oklch(0.22 0.02 222);
+  --card-foreground: oklch(0.22 0.02 222);
+  --popover-foreground: oklch(0.22 0.02 222);
+  --primary: oklch(0.45 0.075 222);
+  --primary-foreground: oklch(0.985 0.004 222);
+  --secondary: oklch(0.962 0.006 222);
+  --muted: oklch(0.962 0.006 222);
+  --muted-foreground: oklch(0.45 0.018 222);
+  --accent: oklch(0.955 0.01 222);
+  --border: oklch(0.905 0.008 222);
+  --input: oklch(0.905 0.008 222);
+  --ring: oklch(0.52 0.09 222);
+  --sidebar-primary: oklch(0.45 0.075 222);
+
+  --font-dm-sans: "Outfit Variable", sans-serif;
+  --font-inter: "IBM Plex Sans Variable", sans-serif;
+  --font-mono:
+    "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+}

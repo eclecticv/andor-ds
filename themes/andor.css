@@ -1,0 +1,40 @@
+/* And/or Labs theme for Mainline.
+   Colour and font values only. Import after mainline/styles/global.css,
+   or paste these values over the same declarations in a product's copy.
+   Fonts: copy fonts/Geist-Variable.woff2 and fonts/DepartureMono-Regular.woff2
+   to public/fonts/geist/ and public/fonts/departure-mono/. */
+
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/geist/Geist-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Departure Mono";
+  src: url("/fonts/departure-mono/DepartureMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary: oklch(0.53 0.255 265);
+  --primary-foreground: oklch(0.99 0 0);
+  --ring: oklch(0.53 0.255 265);
+  --sidebar-primary: oklch(0.53 0.255 265);
+
+  --font-dm-sans: "Geist", sans-serif;
+  --font-inter: "Geist", sans-serif;
+  --font-mono:
+    "Departure Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+.dark {
+  --primary: oklch(0.62 0.21 265);
+  --primary-foreground: oklch(0.99 0 0);
+  --ring: oklch(0.62 0.21 265);
+}
